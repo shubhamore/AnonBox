@@ -5,6 +5,7 @@ import AuthProvider from "@/context/AuthProvider";
 const inter = Inter({ subsets: ["latin"] });
 import { Toaster } from "@/components/ui/toaster"
 import Navbar from "@/components/custom/Navbar";
+import { ThemeProvider } from "@/components/theme/theme-provider";
 
 export const metadata: Metadata = {
   title: "AnonBox",
@@ -20,8 +21,15 @@ export default function RootLayout({
     <html lang="en">
       <AuthProvider>
         <body className={inter.className}>
-          <Navbar/>
-          {children}
+        <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+            >
+            <Navbar/>
+            {children}
+            </ThemeProvider>
           <Toaster/>
           </body>
       </AuthProvider>
