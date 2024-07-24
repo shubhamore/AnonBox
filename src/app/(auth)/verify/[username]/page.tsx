@@ -1,7 +1,9 @@
 "use client"
 
 import { Button } from '@/components/ui/button'
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form'
+import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form'
+import { InputOTP,InputOTPGroup,InputOTPSlot} from "@/components/ui/input-otp"
+import { Card,CardContent,CardDescription,CardFooter,CardHeader,CardTitle } from "@/components/ui/card"
 import { Input } from '@/components/ui/input'
 import { useToast } from '@/components/ui/use-toast'
 import { verifySchema } from '@/schemas/verifySchema'
@@ -46,25 +48,41 @@ export default function page() {
     }
 
   return (
-    <div>
-        <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-                <FormField
-                name="code"
-                control={form.control}
-                render={({ field }) => (
-                    <FormItem>
-                    <FormLabel>Verification Code</FormLabel>
-                    <FormControl>
-                        <Input placeholder="code" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                    </FormItem>
-                )}
-                />
-                <Button type="submit">Submit</Button>
-            </form>
-        </Form>
+    <div className="container mx-auto px-4 py-10">
+        <Card className="max-w-md mx-auto py-2 sm:py-4 sm:px-2 md:py-6 md:px-4 text-center">
+            <CardHeader>
+                <CardTitle>One-Time Password</CardTitle>
+                <CardDescription>Please enter the one-time password sent to your Email.</CardDescription>
+            </CardHeader>
+            <CardContent>
+                <Form {...form}>
+                    <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+                        <FormField
+                        name="code"
+                        control={form.control}
+                        render={({ field }) => (
+                            <FormItem className='justify-center flex'>
+                                <FormControl>
+                                    <InputOTP maxLength={6} {...field}>
+                                        <InputOTPGroup>
+                                            <InputOTPSlot index={0} />
+                                            <InputOTPSlot index={1} />
+                                            <InputOTPSlot index={2} />
+                                            <InputOTPSlot index={3} />
+                                            <InputOTPSlot index={4} />
+                                            <InputOTPSlot index={5} />
+                                        </InputOTPGroup>
+                                    </InputOTP>
+                                </FormControl>
+                                <FormMessage />
+                            </FormItem>
+                        )}
+                        />
+                        <Button type="submit" className='w-2/5'>Submit</Button>
+                    </form>
+                </Form>
+            </CardContent>
+        </Card>
     </div>
   )
 }
