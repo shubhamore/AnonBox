@@ -19,7 +19,14 @@ export default function Navbar() {
             }
         </div> */}
         <div className='flex justify-between items-center text-3xl font-semibold'><Link href={"/"}>AnonBox</Link></div>
-        <ThemeToggle/>
+        <div className='flex justify-between items-center gap-4'>
+          <ThemeToggle/>
+          {session?
+            (<Button onClick={()=>signOut()} variant={"outline"} >Logout</Button>)
+            :
+            (<Button variant={"outline"}><Link href={"/sign-in"}>Login</Link></Button>)
+          }
+        </div>
     </nav>
   )
 }
