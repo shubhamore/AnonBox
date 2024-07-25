@@ -3,6 +3,7 @@ import Features from "@/components/landing/Features";
 import Footer from "@/components/landing/Footer";
 import Hero from "@/components/landing/Hero";
 import Steps from "@/components/landing/Steps";
+import { Loader2 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
