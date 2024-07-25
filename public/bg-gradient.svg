@@ -1,0 +1,23 @@
+<svg viewBox="0 0 3000 2000" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<defs><radialGradient id="grad0" cx="3%" cy="90%" r="100%" fx="3%" fy="90%" gradientUnits="objectBoundingBox">
+					<stop offset="0" stop-color="rgba(250,211,102,1)" stop-opacity="1" />
+					<stop offset="0.5" stop-color="rgba(250,211,102,0)" stop-opacity="0" />
+				</radialGradient>,<radialGradient id="grad1" cx="49%" cy="37%" r="100%" fx="49%" fy="37%" gradientUnits="objectBoundingBox">
+					<stop offset="0" stop-color="rgba(36,245,224,1)" stop-opacity="1" />
+					<stop offset="0.5" stop-color="rgba(36,245,224,0)" stop-opacity="0" />
+				</radialGradient>,<radialGradient id="grad2" cx="51%" cy="18%" r="100%" fx="51%" fy="18%" gradientUnits="objectBoundingBox">
+					<stop offset="0" stop-color="rgba(37,248,90,1)" stop-opacity="1" />
+					<stop offset="0.5" stop-color="rgba(37,248,90,0)" stop-opacity="0" />
+				</radialGradient>,<radialGradient id="grad3" cx="42%" cy="87%" r="100%" fx="42%" fy="87%" gradientUnits="objectBoundingBox">
+					<stop offset="0" stop-color="rgba(239,76,62,1)" stop-opacity="1" />
+					<stop offset="0.5" stop-color="rgba(239,76,62,0)" stop-opacity="0" />
+				</radialGradient>,<radialGradient id="grad4" cx="18%" cy="11%" r="100%" fx="18%" fy="11%" gradientUnits="objectBoundingBox">
+					<stop offset="0" stop-color="rgba(235,75,247,1)" stop-opacity="1" />
+					<stop offset="0.5" stop-color="rgba(235,75,247,0)" stop-opacity="0" />
+				</radialGradient>,<radialGradient id="grad5" cx="91%" cy="33%" r="100%" fx="91%" fy="33%" gradientUnits="objectBoundingBox">
+					<stop offset="0" stop-color="rgba(209,93,244,1)" stop-opacity="1" />
+					<stop offset="0.5" stop-color="rgba(209,93,244,0)" stop-opacity="0" />
+				</radialGradient>,<radialGradient id="grad6" cx="19%" cy="24%" r="100%" fx="19%" fy="24%" gradientUnits="objectBoundingBox">
+					<stop offset="0" stop-color="rgba(164,52,249,1)" stop-opacity="1" />
+					<stop offset="0.5" stop-color="rgba(164,52,249,0)" stop-opacity="0" />
+				</radialGradient></defs><rect x="0" y="0" width="3000" height="2000" fill="#8046b9" /><rect x="0" y="0" width="3000" height="2000" fill="url(#grad0)" />,<rect x="0" y="0" width="3000" height="2000" fill="url(#grad1)" />,<rect x="0" y="0" width="3000" height="2000" fill="url(#grad2)" />,<rect x="0" y="0" width="3000" height="2000" fill="url(#grad3)" />,<rect x="0" y="0" width="3000" height="2000" fill="url(#grad4)" />,<rect x="0" y="0" width="3000" height="2000" fill="url(#grad5)" />,<rect x="0" y="0" width="3000" height="2000" fill="url(#grad6)" /></svg>
