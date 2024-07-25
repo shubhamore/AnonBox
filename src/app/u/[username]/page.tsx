@@ -24,7 +24,7 @@ import { useForm } from "react-hook-form"
 import { z } from "zod"
 import { Card } from "@/components/ui/card"
 
-export default function page() {
+export default function AnonPage() {
   const [loading,setLoading]=useState(false)
   const {toast}=useToast()
   const params=useParams<{username:string}>()

@@ -33,7 +33,7 @@ import {
 } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 
-export default function page() {
+export default function SignUpPage() {
   const [username, setUsername] = useState("");
   const [usernameMessage, setUsernameMessage] = useState("");
   const [isCheckingUsername, setIsCheckingUsername] = useState(false);

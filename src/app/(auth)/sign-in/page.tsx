@@ -24,7 +24,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 
-export default function page() {
+export default function SignInPage() {
     const { toast } = useToast()
     const router=useRouter()
 
@@ -95,7 +95,7 @@ export default function page() {
         </Form>
   </CardContent>
   <CardFooter>
-          <p>Don't have an account?
+          <p>Don&apos;t have an account?
           <Link href="/sign-up" className="text-blue-700 pl-1 ">Sign-up</Link>
           </p> 
         </CardFooter>
