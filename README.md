@@ -8,9 +8,17 @@
 - **Easy Sharing**: Share your unique link via social media, email, or any platform.
 - **User Privacy**: Your personal information remains secure and private.
 
-### Usage
+## Tech Stack
+
+- **Framework**: Next.js
+- **Database**: MongoDB
+- **ORM**: Mongoose
+- **Language**: TypeScript
+- **Email Service**: Resend
+- **UI Components**: Shadcn
+
+## Usage
 
 1. **Sign Up**: Visit the homepage and create your account by clicking the "Sign Up" button.
 2. **Share Your Link**: After signing up, you will receive a unique link. Share this link via social media, email, or any platform.
 3. **Receive Messages**: Check your AnonBox to receive anonymous messages from others.
-
